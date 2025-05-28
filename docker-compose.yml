@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  realestates:
+    build:
+      context: ./server
+      dockerfile: Dockerfile
+    container_name: realestates
+    ports:
+      - "4000:4000"
+    env_file:
+      - ./server/.env
+
+  front-side:
+    build:
+      context: ./client
+      dockerfile: Dockerfile
+    container_name: front-side
+    ports:
+      - "5173:5173"
+    environment:
+      - CHOKIDAR_USEPOLLING=true
