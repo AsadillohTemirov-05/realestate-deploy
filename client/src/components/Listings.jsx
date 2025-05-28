@@ -15,8 +15,8 @@ const Listings = () => {
     try {
       const response = await fetch(
         selectedCategory !== "All"
-          ? `http://realestates:4000/listing?category=${selectedCategory}`
-          : "http://realestates:4000/listing",
+          ? `http://3.6.41.162:4000/listing?category=${selectedCategory}`
+          : "http://3.6.41.162:4000/listing",
         {
           method: "GET",
         }

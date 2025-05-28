@@ -14,7 +14,7 @@ const TripList = () => {
 
     const getTripList=async ()=>{
         try {
-            const response=await fetch(`http://realestates:4000/users/${userId}/trips`,
+            const response=await fetch(`http://3.6.41.162:4000/users/${userId}/trips`,
                 {method:"GET"}
             );
 

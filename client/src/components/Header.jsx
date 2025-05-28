@@ -32,7 +32,7 @@ const Header = () => {
         <div>
           {!user?(<FaUser/>):(
             <img className='rounded-full object-cover aspect-square' 
-            width={47} height={47} src={`http://realestates:4000/${user.profileImagePath.replace("public","")}`} alt="" srcset="" />
+            width={47} height={47} src={`http://3.6.41.162:4000/${user.profileImagePath.replace("public","")}`} alt="" srcset="" />
           )}
             </div>
             {drowpdownMenu && !user && (

@@ -29,7 +29,7 @@ const Register = () => {
         register_form.append(key,formData[key]);
 
       }
-      const response=await fetch("http://realestates:4000/auth/register",
+      const response=await fetch("http://3.6.41.162:4000/auth/register",
         {method:"POST",body:register_form});
 
       if(response.ok){

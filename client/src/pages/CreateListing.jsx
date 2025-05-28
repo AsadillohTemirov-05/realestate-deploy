@@ -107,7 +107,7 @@ const handleChangeDescription=(e)=>{
         listingForm.append("listingPhotos",photo);
       });
 
-      const response=await fetch("http://realestates:4000/listing/create",
+      const response=await fetch("http://3.6.41.162:4000/listing/create",
         {
           method:"POST",
           body:listingForm,

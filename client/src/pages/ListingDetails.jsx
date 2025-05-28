@@ -24,7 +24,7 @@ const ListingDetails = () => {
 
     const getListingDetails=async ()=>{
         try {
-            const response=await fetch(`http://realestates:4000/listing/${listingId}`,{
+            const response=await fetch(`http://3.6.41.162:4000/listing/${listingId}`,{
                 method:"GET",
             });
             const data=await response.json();
@@ -71,7 +71,7 @@ const ListingDetails = () => {
 
       };
 
-      const response=await fetch("http://realestates:4000/bookings/create",{
+      const response=await fetch("http://3.6.41.162:4000/bookings/create",{
         method:"POST",
         headers:{
           "Content-Type":"application/json",
@@ -134,7 +134,7 @@ const ListingDetails = () => {
 
     <div className="flex items-center gap-3 pt-4">
       <img
-        src={`http://realestates:4000/${listing?.creator?.profileImagePath?.replace("public", "")}`}
+        src={`http://3.6.41.162:4000/${listing?.creator?.profileImagePath?.replace("public", "")}`}
         alt="creator"
         className="w-11 h-11 rounded-full object-cover"
       />
@@ -189,7 +189,7 @@ const ListingDetails = () => {
         <div className='flex flex-wrap'>
           {listing.listingPhotoPaths?.map((item,index)=>(
             <div key={index} className={`${index===0} ? "w-full":"w-1/2" p-2`}>
-              <img className={`max-w-full ${index===0?"object-contain rounded-3xl":"rounded-2xl"}`}   src={`http://realestates:4000/${item.replace("public","")}`} alt="" />
+              <img className={`max-w-full ${index===0?"object-contain rounded-3xl":"rounded-2xl"}`}   src={`http://3.6.41.162:4000/${item.replace("public","")}`} alt="" />
             </div>
           ))}
 

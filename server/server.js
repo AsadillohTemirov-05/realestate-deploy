@@ -37,7 +37,7 @@ connectDB();
 
 app.listen(PORT,(err)=>{
   if(!err){
-    console.log(`Server has started working on http://realestates:${PORT}`);
+    console.log(`Server has started working on http://3.6.41.162:${PORT}`);
   }  
   else{
     console.log("Error:"+err);

@@ -14,7 +14,7 @@ const PropertyList = () => {
 
     const getPropertyList= async ()=>{
       try {
-        const response=await fetch(`http://realestates:4000/users/${user._id}/listing`,{
+        const response=await fetch(`http://3.6.41.162:4000/users/${user._id}/listing`,{
           method:"GET", 
         });
 

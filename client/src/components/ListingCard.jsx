@@ -50,7 +50,7 @@ const ListingCard = ({
   const patchWishList = async () => {
     if (user?._id !== creator._id) {
       const response = await fetch(
-        `http://realestates:4000/users/${user?._id}/${listingId}`,
+        `http://3.6.41.162:4000/users/${user?._id}/${listingId}`,
         {
           method: "PATCH",
           headers: {
@@ -81,7 +81,7 @@ const ListingCard = ({
               className="relative flex-none w-full h-[266px] items-center">
               <img
                 src=
-                {`http://realestates:4000/${photo.replace("public", "")}`}
+                {`http://3.6.41.162:4000/${photo.replace("public", "")}`}
                 alt={`photo ${i + 1}`}
                 className="h-full w-full rounded-[2rem]"/>
 
